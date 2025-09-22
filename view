@@ -1,0 +1,23 @@
+Conceptual & Theoretical
+1.	What are the internal differences between a simple view and a complex view in terms of query optimization and updatability?
+2.	Can you explain how view resolution works internally in MySQL/PostgreSQL/SQL Server/Oracle? How does the query engine expand views during execution?
+3.	How do indexed/materialized views differ from normal views? In which scenarios would you choose one over the other?
+4.	Can you describe situations where a view might cause performance degradation instead of improvement?
+5.	How does the use of WITH CHECK OPTION in a view affect insert and update operations? Give real-world examples.
+6.	What are the limitations of updating data through a view? How does this differ across RDBMS vendors (MySQL vs. Oracle vs. SQL Server)?
+7.	Explain how schema binding affects views. Why would you use WITH SCHEMABINDING in SQL Server, and what are its pros/cons?
+8.	How do views interact with triggers defined on base tables? If you perform DML through a view, how are triggers executed?
+9.	What happens if you drop a column in a base table that is being used in multiple views? How do RDBMS engines handle view invalidation?
+10.	Explain security implications of views. How can you use views to implement row-level or column-level security without exposing the underlying schema?
+________________________________________
+Query & Problem-Solving
+11.	Write a query to create a view that shows employees with their latest salary record, where salary changes are tracked in a history table.
+12.	Suppose you have a view that joins 5 tables with aggregations. How would you debug a situation where the view executes very slowly but each table independently queries fast?
+13.	Write a query using a view to return only those customers who have placed orders in at least 3 consecutive months.
+14.	Create a view that masks sensitive data (e.g., showing only the last 4 digits of a credit card number). How would you ensure users cannot bypass this restriction?
+15.	You have a view that joins Orders, Customers, and Products. The view is used frequently in dashboards. How would you optimize it if the query plan shows repeated full table scans?
+16.	How can you implement row-level filtering logic (for example, only showing sales data for the logged-in region) using views in SQL Server/Oracle/Postgres?
+17.	Create a view that shows only the top N records per group (e.g., top 3 highest-selling products per category). Which approach would you use to ensure performance?
+18.	If you have a nested view (a view built on top of another view, and so on), how do you troubleshoot performance issues? Would you recommend denormalizing them into a single query? Why or why not?
+19.	Suppose a reporting team is querying a view that aggregates billions of rows daily. Would you recommend materialized views or indexed views? Justify with technical reasoning.
+20.	Can you simulate a scenario where an updatable view produces ambiguous results when updating multiple underlying tables? How would you handle it?
