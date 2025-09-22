@@ -1,0 +1,70 @@
+📌 Database Design: University Management System
+We’ll use 4 main tables:
+1. Students
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    dob DATE,
+    email VARCHAR(100) UNIQUE
+);
+2. Courses
+CREATE TABLE Courses (
+    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(100),
+    credits INT
+);
+3. Enrollments
+CREATE TABLE Enrollments (
+    enrollment_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    course_id INT,
+    enrollment_date DATE,
+    grade CHAR(2),
+    FOREIGN KEY (student_id) REFERENCES Students(student_id),
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+);
+4. Professors
+CREATE TABLE Professors (
+    professor_id INT PRIMARY KEY AUTO_INCREMENT,
+    professor_name VARCHAR(100),
+    department VARCHAR(50)
+);
+5. Course_Professors
+(Many-to-many relation between Courses and Professors)
+CREATE TABLE Course_Professors (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    course_id INT,
+    professor_id INT,
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id),
+    FOREIGN KEY (professor_id) REFERENCES Professors(professor_id)
+);
+________________________________________
+📌 Interview Query Questions
+🔹 Joins
+1.	Retrieve all students along with the courses they are enrolled in.
+2.	Find the names of professors teaching "Database Systems" course.
+3.	List students who have not enrolled in any course.
+4.	Show the list of courses along with the number of students enrolled.
+5.	Retrieve student names and their grades for all courses taught by "Dr. Sharma".
+6.	Find all students who are enrolled in more than 2 courses.
+7.	Display courses that do not have any assigned professor.
+8.	Show the professor who teaches the maximum number of courses.
+________________________________________
+🔹 Stored Procedures
+9.	Write a stored procedure to get all courses for a given student_id.
+10.	Write a stored procedure that inserts a new student and enrolls them in a course at the same time.
+11.	Write a stored procedure to update grades for a student given student_id, course_id, and new grade.
+12.	Write a stored procedure to fetch average grades of a student across all enrolled courses.
+13.	Write a stored procedure that returns all professors teaching a given student_id’s courses.
+________________________________________
+🔹 Triggers
+14.	Create a trigger that prevents insertion of a student with duplicate email.
+15.	Create a trigger that updates a log table whenever a new enrollment is made.
+16.	Create a trigger that prevents inserting a grade outside the range A, B, C, D, F.
+17.	Create a trigger to automatically set enrollment_date to CURDATE() if not provided.
+18.	Create a trigger to update a last_modified timestamp whenever student details are updated.
+________________________________________
+🔹 Advanced Queries
+19.	Retrieve top 3 students with the highest average grades.
+20.	Find departments where professors teach more than 5 courses in total.
