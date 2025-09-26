@@ -1,0 +1,5 @@
+1.	How to calculate or set the time limit, memory limit and source limit for the query? 
+2.	How do you set up the automatic back up for the database at every day 12 noon? 
+3.	Explain the range, list, hash, key and composite portioning
+4.	What is scalar subquery, row subquery, table subquery?
+5.	What is non-corelated subquery and co-related subquery?
