@@ -1,0 +1,21 @@
+JDBC Interview Questions
+1.	Explain the steps involved in the JDBC architecture.
+o	How do the DriverManager, Driver, Connection, Statement, and ResultSet interact?
+2.	Differentiate between Statement, PreparedStatement, and CallableStatement.
+o	In which scenarios would you prefer each one?
+3.	What is connection pooling in JDBC and why is it important?
+o	How does it improve application performance?
+4.	How do you handle transactions in JDBC?
+o	Explain the role of setAutoCommit(false), commit(), and rollback().
+5.	What are JDBC batch updates?
+o	How do they work, and how do they improve performance compared to executing statements individually?
+6.	What are SQL Injection risks in JDBC, and how can you prevent them?
+o	Why is PreparedStatement preferred over Statement?
+7.	Explain the difference between ResultSet.TYPE_FORWARD_ONLY, ResultSet.TYPE_SCROLL_INSENSITIVE, and ResultSet.TYPE_SCROLL_SENSITIVE.
+o	Give use cases for each.
+8.	How does JDBC handle large objects (LOBs) such as CLOB and BLOB?
+o	What methods are used to read/write them?
+9.	What is the difference between executeQuery(), executeUpdate(), and execute() methods in JDBC?
+o	Provide examples of when to use each.
+10.	What is the difference between Type-1, Type-2, Type-3, and Type-4 JDBC drivers?
+o	Which driver type is used most commonly today and why?
