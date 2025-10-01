@@ -1,0 +1,10 @@
+1. When do you get BeanIsAbstractException?
+2. Can you create a private beans for your application? 
+3. What is bean scope? implement different scopes through the configuration file
+4. How to configure the configuration file so that it supports annotation?
+5. Create the object of Customer class using the annotation.
+6. How does the @Component works internally? 
+7. what is the use of </context:component-scan>
+8. What happens if you use both <context:component-scan> and explicit <bean> definition for the same class in the spring configuration?
+9. How can you include or exclude certain classes or packages from being scanned using <context:component-scan>?
+10. Suppose you have multiple modules in your project, and each module has a package with the same class name (e.g., com.company.module1.Service and com.company.module2.Service). How would you configure <context:component-scan> to avoid bean definition conflicts?
