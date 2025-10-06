@@ -1,0 +1,57 @@
+🟢 Basic Level (Conceptual Understanding)
+
+What is AOP in Spring Framework?
+Explain the main goal of Aspect-Oriented Programming and how it complements OOP.
+
+What are cross-cutting concerns?
+Give examples of cross-cutting concerns commonly handled using AOP.
+
+What is an Aspect in Spring AOP?
+Define the term and explain its role in modularizing cross-cutting logic.
+
+What is a Join Point in Spring AOP?
+Explain what it represents and where it can occur in your code.
+
+What is a Pointcut in Spring AOP?
+How is it used to define where advice should be applied?
+
+What is Advice in Spring AOP?
+List and describe the types of advice supported in Spring.
+
+What is a Weaving in AOP?
+Explain what weaving means and when it happens in Spring AOP.
+
+Does Spring AOP use compile-time weaving or runtime weaving?
+Clarify which one Spring AOP uses by default and why.
+
+What are the differences between AspectJ and Spring AOP?
+Mention at least three key differences.
+
+Can Spring AOP be used for method-level interception only?
+Discuss the limitations of proxy-based AOP in Spring.
+
+🟠 Intermediate Level (Implementation & Configuration)
+
+How can you enable AOP in a Spring application?
+Explain the use of @EnableAspectJAutoProxy and aop:config in XML.
+
+Write an example of a simple @Aspect class.
+Example: A logging aspect that runs before every method in a package.
+
+What is the difference between @Before and @Around advice?
+When should you use each?
+
+What is the purpose of the JoinPoint parameter in advice methods?
+How can you use it to get method details?
+
+What are the rules for defining a valid Pointcut expression?
+Give examples using execution() expressions.
+
+Can AOP advice modify the return value or arguments of a method?
+Explain how this can be done using @Around advice.
+
+What happens if multiple advices match the same join point?
+How does Spring determine the order of execution?
+
+How can you define the execution order of multiple aspects?
+Explain the use of the @Order annotation or Ordered interface.
