@@ -1,0 +1,36 @@
+Spring Framework 
+✅ Simple Questions (Basics – 1 to 10)
+1.	What is the Spring Framework, and why is it used?
+2.	Explain Inversion of Control (IoC) in Spring.
+3.	What is Dependency Injection (DI)? Give an example.
+4.	What are the different types of dependency injection supported by Spring?
+5.	What is a Spring Bean?
+6.	How do you define a bean in Spring using XML configuration?
+7.	What is the default scope of a Spring Bean? Name other scopes.
+8.	What is the role of the @Component annotation?
+9.	Explain the difference between @Autowired and @Qualifier.
+10.	Case Scenario: If two beans of the same type are available in the Spring container, what will happen if you use @Autowired without @Qualifier?
+________________________________________
+✅ Intermediate Questions (11 to 20)
+11.	What is the difference between ApplicationContext and BeanFactory?
+12.	Explain the concept of Aspect-Oriented Programming (AOP) in Spring.
+13.	What are the different types of advice in Spring AOP?
+14.	Explain the difference between @Component, @Service, @Repository, and @Controller.
+15.	How does Spring handle transactions? Explain the role of @Transactional.
+16.	What is the difference between proxy-based AOP and AspectJ in Spring?
+17.	Explain the Spring Bean lifecycle.
+18.	Case Scenario: You have a database call in your service that needs transaction management. How would you configure Spring to ensure rollback on exceptions?
+19.	Case Scenario: You want to log every method call in a particular package without modifying the methods themselves. How would you implement this in Spring?
+20.	What is the difference between constructor injection and setter injection? Which one is preferred and why?
+________________________________________
+✅ Complex Questions (21 to 30)
+21.	Explain how Spring Boot relates to the Spring Framework.
+22.	How does Spring handle circular dependencies between beans?
+23.	What is the difference between BeanPostProcessor and BeanFactoryPostProcessor?
+24.	How does Spring achieve loose coupling between application components?
+25.	What are profiles in Spring, and how can they be used in a real-world scenario?
+26.	Case Scenario: You need different database configurations for dev, test, and prod. How would you achieve this in Spring?
+27.	Case Scenario: Your Spring application is performing slowly because too many beans are initialized at startup. How can you optimize it?
+28.	Explain how Spring integrates with Hibernate/JPA for ORM.
+29.	Case Scenario: You are building a REST API using Spring. How would you handle global exception handling?
+30.	Case Scenario: You want to secure certain endpoints in your Spring application so that only admin users can access them. How would you achieve this using Spring Security?
