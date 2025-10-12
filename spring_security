@@ -1,0 +1,21 @@
+
+✅ Simple Questions (Basics – 1 to 5)
+1.	What is Spring Security, and why do we use it?
+2.	What types of security does Spring Security provide (e.g., authentication vs authorization)?
+3.	What is the difference between Authentication and Authorization in Spring Security?
+4.	How does Spring Security store user details by default?
+5.	What role does the UserDetailsService interface play in Spring Security?
+________________________________________
+✅ Intermediate Questions (6 to 10)
+6.	Explain the difference between @EnableWebSecurity and @EnableGlobalMethodSecurity.
+7.	What is the purpose of the SecurityFilterChain in Spring Security?
+8.	How do you configure role-based access control in Spring Security?
+9.	What is CSRF protection in Spring Security, and why is it enabled by default?
+10.	Case Scenario: You want to restrict /admin/** URLs so that only users with the role ADMIN can access them. How would you configure this in Spring Security?
+________________________________________
+✅ Advanced/Scenario-Based Questions (11 to 15)
+11.	How does Spring Security integrate with JWT (JSON Web Tokens) for stateless authentication?
+12.	Explain how password encoding works in Spring Security. Which PasswordEncoder implementations are commonly used?
+13.	Case Scenario: You are building a REST API with Spring Security. How would you disable session creation and enforce stateless authentication?
+14.	Case Scenario: Your application needs both form-based login (for UI) and token-based authentication (for REST API). How would you design the security configuration?
+15.	Case Scenario: You want to implement method-level security where only a manager can call approveTransaction(). Which Spring Security annotations would you use, and how?
